@@ -5,7 +5,7 @@
 }
 body {
     padding: 0; /* Sin relleno */
-    background-image: url(../Proyecto_Entornos/images/_\ \(5\).jpeg);
+    background-image: url(/Proyecto_Entornos/images/_\ \(5\).jpeg);
 
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 .littlebio{
-    background: url(../Proyecto_Entornos/images/Salvador-Dali-profile-picture-portrait.jpg); 
+    background: url(/Proyecto_Entornos/images/Salvador-Dali-profile-picture-portrait.jpg); 
     background-size:cover; 
     background-position: center;
     background-attachment: fixed; 
@@ -31,7 +31,7 @@ body {
 }
 
 .pie,h4{
-    background-image: url(../Proyecto_Entornos/images/Pressed\ HPL\ colours.jpeg);
+    background-image: url(/Proyecto_Entornos/images/Pressed\ HPL\ colours.jpeg);
     color: azure;
     text-align: center; padding: 30px;
 }
