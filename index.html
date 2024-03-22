@@ -1,65 +1,226 @@
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>La persistencia de la memoria</title>
-        <link rel="stylesheet"  href="/stylec.css">  
-        <link rel="icon" href="/images/avatar.png" >
-    </head>
-        <body>
-            <div class="imageshead">
-                <img src="/images/Grand Josun (1).jpeg" alt="" style="width: 1365px; height: 400px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La persistencia de la memoria</title>
+    <link rel="stylesheet" href="../Proyecto_Entornos/stylec.css">
+    <link rel="icon" href="../Proyecto_Entornos/images/avatar.png">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h3{
+            font-size: 50px;
+            padding: 25px 120px 0px 30px;
+            background-color: #333;
+            color: #fff;
+        }
+        /* Estilos específicos para diferentes secciones */
+        .imageshead img,
+        .title_prin img {
+            width: 100%;
+            height: auto;
+        }
+
+        .img_prin img{
+            max-width: 100%;
+            height: 500px;
+            display: inline;
+        }
+        .title_prin h1 {
+            font-size: 4vw;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .img_prin {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .img_prin img {
+            max-width: 100%;
+            height: 500px;
+            align-items: center;
+            display: inline;
+        }
+        .img_prin figcaption{
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .contexto,
+        .littlebio {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .contexto img,
+        .littlebio img {
+            float: left;
+            margin-right: 20px;
+        }
+        .contexto p,
+        .littlebio p {
+            text-align: justify;
+            padding: 20px;
+            font-size: 25px;
+        }
+        .contexto .seccion,
+        .littlebio .seccion2 {
+            overflow: hidden; /* Clearfix para evitar problemas de flotación */
+        }
+
+        .pie {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                bottom: 0;
+                width: 100%;
+                background-color: #333;
+                color: #fff;
+            }
+
+            .pie h4 {
+                font-size: 14px; /* Tamaño de fuente adaptable para dispositivos móviles */
+                margin-top: 10px; /* Espacio superior */
+            }
+        /* Media Queries */
+        @media screen and (max-width: 1200px) {
+            .title_prin h1 {
+                font-size: 40px;
+            }
+            .contexto img,
+            .littlebio img {
+                float: none;
+                margin-right: 0;
+            }
+            .pie {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                bottom: 0;
+                width: 100%;
+                background-color: #333;
+                color: #fff;
+            }
+
+            .pie h4 {
+                font-size: 15px; /* Tamaño de fuente adaptable para dispositivos móviles */
+                margin-top: 10px; /* Espacio superior */
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .imageshead img,
+            .title_prin img {
+                height: auto;
+            }
+
+            .img_prin img{
+            max-width: 100%;
+            display: inline;
+        }
+            .title_prin h1 {
+                font-size: 30px;
+            }
+            .contexto img,
+            .littlebio img {
+                float: none;
+                margin-right: 0;
+            }
+
+            .pie {
+                text-align: center;
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                bottom: 0;
+                width: 100%;
+                background-color: #333;
+                color: #fff;
+            }
+
+            .pie h4 {
+                font-size: 14px; /* Tamaño de fuente adaptable para dispositivos móviles */
+                margin-top: 10px; /* Espacio superior */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="imageshead">
+        <img src="../Proyecto_Entornos/images/Grand Josun (1).jpeg" alt="">
+    </div>
+    <div class="title_prin">
+        <img src="../Proyecto_Entornos/images/Pressed HPL colours.jpeg" alt="">
+        <h1>LA PERSISTENCIA DE LA MEMORIA</h1>
+    </div>
+    <div class="container">
+        <figure class="img_prin">
+            <img src="../Proyecto_Entornos/images/La_persistència_de_la_memòria dalí.jpg" alt="">
+            <figcaption>
+                Dalí, según él mismo, se inspiró en el queso camembert a la hora de añadir el homenaje al cuadro, relacionándolos por su 
+                calidad de «tiernos, extravagantes, solitarios y paranoico-críticos». Uno de los relojes cuelga en equilibrio de la rama 
+                de un árbol. Más abajo, en el cuadro, otro se acopla a modo de montura sobre una cara con largas pestañas inspirada en 
+                una roca del cabo de Creus.
+            </figcaption>
+        </figure>
+        <div class="contexto">
+            <div class="seccion">
+                <img src="../Proyecto_Entornos/images/Univers Parallèle.jpeg" alt="">
+                <p>La persistencia de la memoria, también conocido como Los relojes blandos o Los relojes derretidos,
+                es un famoso cuadro del pintor Salvador Dalí pintado en 1931. Realizado mediante la técnica del óleo 
+                sobre lienzo, es de estilo surrealista y sus medidas son 24 x 33 cm. La obra fue exhibida en la primera 
+                exposición individual de Dalí en la Galerie Pierre Colle de París, del 3 al 15 de junio de 1931, y en 
+                enero del año siguiente en una exposición en la Julien Levy Gallery de Nueva York, Surrealism: Paintings,
+                Drawings and Photographs.Se conserva en el Museo de Arte Moderno de Nueva York (MoMA), donde llegó en 
+                1934.En una revisión del cuadro, Dalí creó en 1954 La desintegración de la persistencia de la memoria 
+                (en), obra que se encuentra en el Salvador Dalí Museum (San Petersburgo, Florida).</p>
             </div>
-            
-            <div class="title_prin">
-               <img src="/images/Pressed HPL colours.jpeg" alt="" style="width: 1365px; height: 90px;">
-               <h1 style="text-align: center; padding: 80px; font-size: 50px; ">LA PERSISTENCIA DE LA MEMORIA</h1>
-
-            </div>
+        </div>
+    </div>
 
 
+            <h3 style="font-size: 50px; padding: 25px 120px 0px 30px;">Salvador Dali</h3>
 
-            <figure class="img_prin">
-                <img src="/images/La_persistència_de_la_memòria dalí.jpg"  alt="" style="width: 950px; height: 750px;">
-                <figcaption style="text-align: start; padding: 40px 200px; color: #0000009a; font-size: 20px;">
-                    Dalí, según él mismo, se inspiró en el queso camembert a la hora de añadir el homenaje al cuadro, relacionándolos por su 
-                    calidad de «tiernos, extravagantes, solitarios y paranoico-críticos». Uno de los relojes cuelga en equilibrio de la rama 
-                    de un árbol. Más abajo, en el cuadro, otro se acopla a modo de montura sobre una cara con largas pestañas inspirada en 
-                    una roca del cabo de Creus.
-                </figcaption>
-            
-            </figure>
+        
 
-            <section class="contexto">
-                <div class="conteiner"
-                style="display: flex;">
-                    <p style="background-color: #00000000; text-align:justify; padding: 90px; font-size: 25px;">La persistencia de la memoria,
-                         también conocido como Los relojes blandos o Los relojes derretidos,
-                        es un famoso cuadro del pintor Salvador Dalí pintado en 1931. Realizado mediante la técnica del óleo 
-                        sobre lienzo, es de estilo surrealista y sus medidas son 24 x 33 cm. La obra fue exhibida en la primera 
-                        exposición individual de Dalí en la Galerie Pierre Colle de París,del 3 al 15 de junio de 1931, y en 
-                        enero del año siguiente en una exposición en la Julien Levy Gallery de Nueva York, Surrealism: Paintings,
-                        Drawings and Photographs.Se conserva en el Museo de Arte Moderno de Nueva York (MoMA), donde llegó en 
-                        1934.En una revisión del cuadro, Dalí creó en 1954 La desintegración de la persistencia de la memoria 
-                        (en), obra que se encuentra en el Salvador Dalí Museum (San Petersburgo, Florida).</p>
-                    <img src="/images/Univers Parallèle.jpeg" alt="" style="width: 600px; height: 400px; padding: 80px;">
-    
-                </div>
-            </section>
+            <section class="littlebio">
+                <div class="conteiner2">
+                    <div class="seccion2">
+                        <img src="../Proyecto_Entornos/images/Salvador-Dali-profile-picture-portrait.jpg" alt="" >
+                        <p style="background-color: #00000000; text-align:justify; padding: 90px; font-size: 25px;">
+                            Pintor español
+                            Salvador Dalí nació el 11 de mayo de 1904 en Figueres, España. Fue el segundo hijo de una familia adinerada, 
+                            así que siempre fue muy consentido y mimado y sus padres le conseguían todos sus caprichos.    
+                            Salvador Dalí era muy conocido por sus pinturas extrañas y surrealistas, las más famosas son: “La persistencia 
+                            de la memoria” o “Sueño causado por el vuelo de una abeja alrededor de una granada un segundo antes de despertar”.
+                            También le gustaban las manualidades y hacía escenas con objetos y dibujos de papel, colocándolos en un espacio 
+                            también hecho de papel, como si fuera un teatro. Colaboró en varias obras de teatro y en películas de cine diseñando 
+                            el decorado de las escenas.
+                        </p>
 
-            <section class="littlebio" style="text-align: right;">
-                <div >
-                    <h3 style="font-size: 50px; padding: 25px 120px 0px 30px;">Salvador Dali</h3>
-                    <p class="parrafo">
-                        Pintor español
-                        Salvador Dalí nació el 11 de mayo de 1904 en Figueres, España. Fue el segundo hijo de una familia adinerada, 
-                        así que siempre fue muy consentido y mimado y sus padres le conseguían todos sus caprichos.    
-                        Salvador Dalí era muy conocido por sus pinturas extrañas y surrealistas, las más famosas son: “La persistencia 
-                        de la memoria” o “Sueño causado por el vuelo de una abeja alrededor de una granada un segundo antes de despertar”.
-                        También le gustaban las manualidades y hacía escenas con objetos y dibujos de papel, colocándolos en un espacio 
-                        también hecho de papel, como si fuera un teatro. Colaboró en varias obras de teatro y en películas de cine diseñando 
-                        el decorado de las escenas.
-                        Además de sus pinturas y sus dibujos, estaba aficionado a hacer grabados en tinta sobre papel.</p>
+                    </div>
+                   
                 </div>
             </section>
 
